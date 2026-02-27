@@ -1,0 +1,7 @@
+dspy
+litellm
+openai
+pandas
+openpyxl
+python-dotenv
+pytest

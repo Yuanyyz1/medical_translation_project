@@ -1,0 +1,33 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache/bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test and tooling cache
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter local artifacts
+.ipynb_checkpoints/
+*.local.ipynb
+
+# Generated outputs (keep source data/inputs tracked)
+outputs/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
