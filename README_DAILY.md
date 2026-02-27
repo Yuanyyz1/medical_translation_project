@@ -40,7 +40,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 1. Backup the workflow
 ```powershell
 git add .
-git commit -m "Updated model logic"
+git commit -m "what has been updated"
 git push
 ```
 
