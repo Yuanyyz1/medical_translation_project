@@ -136,7 +136,12 @@ python scripts/run_detect_errors.py --models default,qwen,gemini,mistral,deepsee
 If you changed `.env` key but terminal still uses old one:
 
 ```powershell
-Remove-Item Env:OPENROUTER_API_KEY
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1
 ```
 
-Then rerun your script.
+## 7) What not in this file
+
+Advanced tasks (for example, adding new models) are not in this daily guide.
+
+Use `README.md` for project internals and advanced configuration.
