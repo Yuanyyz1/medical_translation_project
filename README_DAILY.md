@@ -35,6 +35,21 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 4. Confirm you see `(.venv)` in terminal prompt.
 
+## Github backup
+
+1. Backup the workflow
+```powershell
+git add .
+git commit -m "Updated model logic"
+git push
+```
+
+2. Check whether things are all committed
+```powershell
+git status
+```
+
+
 ## Common commands
 
 ### Insert errors (first row only)
@@ -136,12 +151,7 @@ python scripts/run_detect_errors.py --models default,qwen,gemini,mistral,deepsee
 If you changed `.env` key but terminal still uses old one:
 
 ```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\.venv\Scripts\Activate.ps1
+Remove-Item Env:OPENROUTER_API_KEY
 ```
 
-## 7) What not in this file
-
-Advanced tasks (for example, adding new models) are not in this daily guide.
-
-Use `README.md` for project internals and advanced configuration.
+Then rerun your script.
